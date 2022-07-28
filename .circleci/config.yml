@@ -14,7 +14,6 @@ workflows:
   build-and-deploy:
     jobs:
       - approve:
-          name: Approval Job
           type: approval
       - build:
           requires:
