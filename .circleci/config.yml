@@ -19,10 +19,10 @@ workflows:
           type: approval
           requires:
             - build
-          context:
-            - approval-job
             
       - build:
           requires:
             - approve
           name: Second Build
+          context:
+            - approval-job
