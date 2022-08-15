@@ -25,4 +25,4 @@ workflows:
             - approve
           name: Second Build
           context:
-            - approval
+            - approval-job
