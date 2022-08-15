@@ -15,7 +15,8 @@ workflows:
     jobs:
       - approve:
           type: approval
+          context: approval
+
       - build:
           requires:
             - approve
-          context: approval
