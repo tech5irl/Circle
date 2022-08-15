@@ -17,10 +17,10 @@ workflows:
             
       - approve:
           type: approval
-          context: approval
-          requires: build
+          requires:
+            - build
 
-      - build:
+      - build2:
           requires:
             - approve
-
+          name: Second Build
