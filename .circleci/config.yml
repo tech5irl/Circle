@@ -20,7 +20,7 @@ workflows:
           requires:
             - build
 
-      - build2:
+      - build:
           requires:
             - approve
           name: Second Build
