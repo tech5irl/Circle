@@ -13,7 +13,7 @@ jobs:
 workflows:
   build-and-deploy:
     jobs:
-      - build:
+      - build
             
       - approve:
           type: approval
