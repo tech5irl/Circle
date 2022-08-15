@@ -13,10 +13,14 @@ jobs:
 workflows:
   build-and-deploy:
     jobs:
+      - build:
+            
       - approve:
           type: approval
           context: approval
+          requires: build
 
       - build:
           requires:
             - approve
+
