@@ -24,3 +24,5 @@ workflows:
           requires:
             - approve
           name: Second Build
+          context:
+            - approval
