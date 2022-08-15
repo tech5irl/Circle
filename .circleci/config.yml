@@ -8,7 +8,7 @@ jobs:
     steps:
       - run:
           name: Current dir
-          command: pwd
+          command: pwd && echo "Bonjour"
 
 workflows:
   build-and-deploy:
